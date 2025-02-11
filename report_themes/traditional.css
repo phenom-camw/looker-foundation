@@ -55,6 +55,7 @@ th.headerCell {
   border-bottom: 1px solid #000000 !important;
   font-weight: bold;
   padding: 5px;
+  text-align: center !important;
 }
 
 .headerCell.merged {
@@ -93,7 +94,7 @@ th.headerCell {
 }
 
 .numeric {
-  text-align: right;
+  text-align: center !important;
 }
 
 .negative {
