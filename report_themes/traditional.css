@@ -55,7 +55,7 @@ th.headerCell {
   border-bottom: 1px solid #000000 !important;
   font-weight: bold;
   padding: 5px;
-  text-align: center !important;
+  text-align: center !important; /* custom  */
 }
 
 .headerCell.merged {
@@ -69,11 +69,17 @@ th.headerCell {
 }
 
 .indexCell.transposed {
-  font-weight: bold;
+  font-weight: bold; 
+  font-weight: normal; /* custom  */
 }
 
 .indexCell.transposed.merged {
   background-color: #ffffff !important;
+}
+
+tr:last-child .indexCell.transposed { /* custom  */
+    font-weight: bold !important;
+    border-top: 2px solid #000000;
 }
 
 .rowCell {
@@ -94,7 +100,8 @@ th.headerCell {
 }
 
 .numeric {
-  text-align: center !important;
+  text-align: right;
+  text-align: center !important; /* custom  */
 }
 
 .negative {
@@ -112,6 +119,12 @@ th.headerCell {
 .subtotal {
   font-style: italic;
   font-weight: bold !important;
+  padding-bottom: 12px; /* custom  */
+}
+
+.subtotal.transposed { /* custom  */
+  border-top: 2px solid #000000; 
+  font-style: normal; 
 }
 
 .total {
